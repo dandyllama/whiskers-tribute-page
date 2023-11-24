@@ -1,0 +1,99 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  --text-color: #f8f8f8;
+  --primary-background: #220a54;
+  --secondary-background: #bf1e6a;
+}
+
+*,
+*::before,
+*::after {
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  width: 100%;
+  padding: 50px;
+  background-color: var(--primary-background);
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 95%;
+  padding: 0;
+  border-radius: 1%;
+  background-color: var(--secondary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.tribute-info {
+  margin-bottom: 2rem;
+}
+
+.img-div {
+  width: 90%;
+  height: 75vh;
+  margin-bottom: 50px;
+  border-radius: 1%;
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 25px;
+  border-radius: 1%;
+  display: block;
+}
+
+.img-caption {
+  margin: unset;
+}
+
+.image,
+.tribute-timeline,
+.footer {
+  width: 60%;
+  max-width: 800px;
+}
+
+.tribute-timeline > ul > li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tribute-timeline > ul > li > span {
+  font-weight: bold;
+}
+
+.footer {
+  font-weight: bold;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--text-color);
+}
